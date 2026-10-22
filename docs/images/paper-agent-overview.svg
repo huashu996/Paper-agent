@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="800" viewBox="0 0 1440 800" role="img" aria-labelledby="title desc">
+  <title id="title">Paper Agent: from source evidence to reviewed academic outputs</title>
+  <desc id="desc">Source literature, drafts, experiments, and user constraints support a research argument from problem to conclusion. Manuscripts, editable figures, and validation records are reviewed for visible quality and preservation. Seven task modes load only relevant workflows.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#147D7A"/></marker>
+    <style>
+      text { font-family: Inter, "Segoe UI", Arial, sans-serif; }
+      .ink { fill: #142B43; } .muted { fill: #52667A; }
+      .label { font-size: 22px; font-weight: 650; fill: #142B43; }
+      .body { font-size: 20px; fill: #52667A; }
+      .tiny { font-size: 17px; fill: #52667A; }
+    </style>
+  </defs>
+  <rect width="1440" height="800" fill="#F6F9FB"/>
+  <rect x="56" y="48" width="8" height="54" rx="4" fill="#147D7A"/>
+  <text x="84" y="79" class="ink" font-size="40" font-weight="750">Paper Agent</text>
+  <text x="84" y="112" class="muted" font-size="22">Evidence-grounded academic writing and revision</text>
+  <rect x="1137" y="57" width="247" height="40" rx="20" fill="#E3F1EE"/>
+  <text x="1260.5" y="83" text-anchor="middle" fill="#126C69" font-size="17" font-weight="650">ONE AGENT · THREE ROLES</text>
+
+  <rect x="56" y="158" width="340" height="410" rx="18" fill="#FFFFFF" stroke="#D7E2E9" stroke-width="1.5"/>
+  <rect x="56" y="158" width="340" height="7" rx="3.5" fill="#142B43"/>
+  <text x="82" y="203" class="label">Source material</text>
+  <text x="82" y="232" class="tiny">Start with traceable evidence</text>
+  <g fill="#F1F5F8">
+    <rect x="82" y="259" width="288" height="54" rx="10"/>
+    <rect x="82" y="326" width="288" height="54" rx="10"/>
+    <rect x="82" y="393" width="288" height="54" rx="10"/>
+    <rect x="82" y="460" width="288" height="54" rx="10"/>
+  </g>
+  <g fill="#142B43" font-size="21">
+    <text x="102" y="293">Literature &amp; references</text>
+    <text x="102" y="360">Drafts &amp; templates</text>
+    <text x="102" y="427">Experiments &amp; code</text>
+    <text x="102" y="494">User scope &amp; constraints</text>
+  </g>
+
+  <path d="M 406 363 H 439" fill="none" stroke="#147D7A" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="450" y="158" width="540" height="410" rx="18" fill="#FFFFFF" stroke="#BBDAD5" stroke-width="1.5"/>
+  <rect x="450" y="158" width="540" height="7" rx="3.5" fill="#147D7A"/>
+  <text x="476" y="203" class="label">Build the research argument</text>
+  <text x="476" y="232" class="tiny">Connect claims to methods and validation</text>
+  <g fill="#EDF7F4" stroke="#CBE4DD">
+    <rect x="476" y="255" width="488" height="52" rx="10"/>
+    <rect x="476" y="328" width="488" height="52" rx="10"/>
+    <rect x="476" y="401" width="488" height="52" rx="10"/>
+    <rect x="476" y="474" width="488" height="52" rx="10"/>
+  </g>
+  <g fill="#126C69" font-size="21" font-weight="600" text-anchor="middle">
+    <text x="720" y="288">Research question + existing limitations</text>
+    <text x="720" y="361">Core idea + technical modules</text>
+    <text x="720" y="434">Mathematical model + experiments</text>
+    <text x="720" y="507">Conclusions + boundaries</text>
+  </g>
+  <g fill="none" stroke="#147D7A" stroke-width="1.8" marker-end="url(#arrow)">
+    <path d="M 720 310 V 324"/><path d="M 720 383 V 397"/><path d="M 720 456 V 470"/>
+  </g>
+
+  <path d="M 1000 363 H 1033" fill="none" stroke="#147D7A" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="1044" y="158" width="340" height="410" rx="18" fill="#FFFFFF" stroke="#E3D8B8" stroke-width="1.5"/>
+  <rect x="1044" y="158" width="340" height="7" rx="3.5" fill="#B18D3F"/>
+  <text x="1070" y="203" class="label">Review &amp; deliver</text>
+  <text x="1070" y="232" class="tiny">Verify the final saved output</text>
+  <g fill="#FBF7EB">
+    <rect x="1070" y="259" width="288" height="66" rx="10"/>
+    <rect x="1070" y="342" width="288" height="66" rx="10"/>
+    <rect x="1070" y="425" width="288" height="66" rx="10"/>
+  </g>
+  <g fill="#142B43" font-size="21" font-weight="600">
+    <text x="1090" y="286">Manuscripts</text>
+    <text x="1090" y="369">Editable figures</text>
+    <text x="1090" y="452">Evidence &amp; checks</text>
+  </g>
+  <g class="tiny">
+    <text x="1090" y="310">Content and page layout</text>
+    <text x="1090" y="393">Native objects, where required</text>
+    <text x="1090" y="476">Citations, fidelity, review records</text>
+  </g>
+  <text x="1070" y="533" class="tiny">Deliver only the requested artifacts.</text>
+
+  <rect x="56" y="600" width="1328" height="80" rx="14" fill="#142B43"/>
+  <text x="82" y="632" fill="#FFFFFF" font-size="21" font-weight="650">Preserve the research record</text>
+  <text x="82" y="661" fill="#D9E6EF" font-size="20">Source data · citations · equations · section structure · frozen content · user-authorized scope</text>
+  <text x="56" y="720" class="ink" font-size="20" font-weight="650">Seven task modes</text>
+  <text x="1384" y="720" text-anchor="end" class="tiny">Load specialist workflows only when needed</text>
+  <g fill="#FFFFFF" stroke="#D7E2E9">
+    <rect x="56" y="738" width="141" height="35" rx="9"/><rect x="211" y="738" width="156" height="35" rx="9"/>
+    <rect x="381" y="738" width="190" height="35" rx="9"/><rect x="585" y="738" width="145" height="35" rx="9"/>
+    <rect x="744" y="738" width="224" height="35" rx="9"/><rect x="982" y="738" width="192" height="35" rx="9"/>
+    <rect x="1188" y="738" width="196" height="35" rx="9"/>
+  </g>
+  <g font-size="17" fill="#52667A" text-anchor="middle">
+    <text x="126.5" y="761">full_paper</text><text x="289" y="761">method_only</text><text x="476" y="761">experiment_only</text>
+    <text x="657.5" y="761">figure_only</text><text x="856" y="761">literature_citation</text><text x="1078" y="761">conclusion_only</text><text x="1286" y="761">revision_only</text>
+  </g>
+</svg>

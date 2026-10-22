@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Agent"
+  short_description: "以规划、执行、审查三阶段完成科研论文写作、排版、引用与科研绘图"
+  default_prompt: "Use $paper-agent to plan, execute, and review my paper task while preserving data, citations, formulas, formatting, authorized scope, and all applicable quality gates."

@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Local environments, credentials, and private task outputs
+.venv/
+.env
+.env.*
+!.env.example
+/build/
+/output/
+/outputs/
+/private_audit/
+*.enl
+*.enlp
+*.Data/
+

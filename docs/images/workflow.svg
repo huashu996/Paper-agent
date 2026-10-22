@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940" role="img" aria-labelledby="title desc">
+  <title id="title">Paper Agent workflow: Planner, Executor, Reviewer</title>
+  <desc id="desc">One agent follows three logical roles. The Planner defines scope and acceptance criteria, the Executor produces a candidate, and the Reviewer inspects the final saved output. Execution issues return to the Executor; planning or evidence issues return to the Planner. Specialist workflows load on demand. Delivery follows approval and edits invalidate earlier review.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#147D7A"/></marker>
+    <marker id="return" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 Z" fill="#8A7136"/></marker>
+    <style>text {font-family: Inter, "Segoe UI", Arial, sans-serif;} .ink {fill:#142B43;} .muted {fill:#52667A;} .body {font-size:21px;fill:#52667A;} .small {font-size:18px;fill:#52667A;}</style>
+  </defs>
+  <rect width="1440" height="940" fill="#F6F9FB"/>
+  <rect x="56" y="48" width="8" height="54" rx="4" fill="#147D7A"/>
+  <text x="84" y="79" class="ink" font-size="38" font-weight="750">One agent, three logical roles</text>
+  <text x="84" y="112" class="muted" font-size="22">Plan the work, execute within scope, review the saved result.</text>
+
+  <g fill="#FFFFFF" stroke="#D7E2E9" stroke-width="1.5">
+    <rect x="56" y="160" width="406" height="290" rx="18"/>
+    <rect x="517" y="160" width="406" height="290" rx="18"/>
+    <rect x="978" y="160" width="406" height="290" rx="18"/>
+  </g>
+  <rect x="56" y="160" width="406" height="7" rx="3.5" fill="#142B43"/>
+  <rect x="517" y="160" width="406" height="7" rx="3.5" fill="#147D7A"/>
+  <rect x="978" y="160" width="406" height="7" rx="3.5" fill="#B18D3F"/>
+  <g font-size="18" font-weight="700"><text x="82" y="199" fill="#52667A">01</text><text x="543" y="199" fill="#147D7A">02</text><text x="1004" y="199" fill="#8A7136">03</text></g>
+  <g class="ink" font-size="31" font-weight="700"><text x="82" y="239">Planner</text><text x="543" y="239">Executor</text><text x="1004" y="239">Reviewer</text></g>
+  <g class="body">
+    <text x="82" y="284">Define scope, mode &amp; evidence</text>
+    <text x="82" y="320">Freeze data and layout rules</text>
+    <text x="82" y="356">Set checks &amp; acceptance criteria</text>
+    <text x="543" y="284">Load the relevant workflow</text>
+    <text x="543" y="320">Diagnose, back up, edit</text>
+    <text x="543" y="356">Prepare one review candidate</text>
+    <text x="1004" y="284">Inspect the rendered result</text>
+    <text x="1004" y="320">Check structure &amp; source fidelity</text>
+    <text x="1004" y="356">Approve or return with findings</text>
+  </g>
+  <g stroke="#E3EBF0"><path d="M 82 380 H 436"/><path d="M 543 380 H 897"/><path d="M 1004 380 H 1358"/></g>
+  <g class="small" font-weight="600"><text x="82" y="416">Execution plan</text><text x="543" y="416">Candidate + change log</text><text x="1004" y="416">Decision + review evidence</text></g>
+  <g fill="none" stroke="#147D7A" stroke-width="2.5" marker-end="url(#arrow)"><path d="M 472 305 H 507"/><path d="M 933 305 H 968"/></g>
+
+  <path d="M 1181 451 V 506 H 720 V 461" fill="none" stroke="#8A7136" stroke-width="2" marker-end="url(#return)"/>
+  <rect x="808" y="491" width="303" height="30" rx="8" fill="#F6F9FB"/>
+  <text x="959.5" y="512" text-anchor="middle" fill="#8A7136" font-size="18">Execution issue → Executor</text>
+  <path d="M 1306 451 V 568 H 259 V 461" fill="none" stroke="#8A7136" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#return)"/>
+  <rect x="463" y="553" width="586" height="30" rx="8" fill="#F6F9FB"/>
+  <text x="756" y="574" text-anchor="middle" fill="#8A7136" font-size="18">Scope, parameter, evidence or authorization issue → Planner</text>
+
+  <rect x="56" y="612" width="1328" height="154" rx="16" fill="#EDF7F4" stroke="#CBE4DD"/>
+  <text x="82" y="650" fill="#126C69" font-size="23" font-weight="700">Specialist workflows, loaded on demand</text>
+  <text x="1358" y="650" text-anchor="end" fill="#126C69" font-size="18">One primary mode + relevant modules</text>
+  <g fill="#FFFFFF" stroke="#CBE4DD">
+    <rect x="82" y="673" width="402" height="33" rx="8"/><rect x="519" y="673" width="402" height="33" rx="8"/><rect x="956" y="673" width="402" height="33" rx="8"/>
+    <rect x="82" y="718" width="402" height="33" rx="8"/><rect x="519" y="718" width="402" height="33" rx="8"/><rect x="956" y="718" width="402" height="33" rx="8"/>
+  </g>
+  <g fill="#126C69" font-size="18" text-anchor="middle">
+    <text x="283" y="696">Word layout</text><text x="720" y="696">Equations</text><text x="1157" y="696">Scientific figures</text>
+    <text x="283" y="741">Experimental evidence</text><text x="720" y="741">Citations &amp; EndNote</text><text x="1157" y="741">Research knowledge base / RAG</text>
+  </g>
+
+  <text x="56" y="808" class="ink" font-size="20" font-weight="650">Delivery follows an explicit review decision</text>
+  <g fill="#142B43">
+    <rect x="56" y="828" width="176" height="44" rx="9"/><rect x="268" y="828" width="176" height="44" rx="9"/>
+    <rect x="480" y="828" width="176" height="44" rx="9"/><rect x="692" y="828" width="268" height="44" rx="9"/>
+    <rect x="996" y="828" width="176" height="44" rx="9"/><rect x="1208" y="828" width="176" height="44" rx="9"/>
+  </g>
+  <g fill="#FFFFFF" font-size="16" font-weight="600" text-anchor="middle">
+    <text x="144" y="856">USER_INPUT</text><text x="356" y="856">PLANNED</text><text x="568" y="856">EXECUTING</text>
+    <text x="826" y="856">READY_FOR_REVIEW</text><text x="1084" y="856">APPROVED</text><text x="1296" y="856">DELIVERED</text>
+  </g>
+  <g fill="none" stroke="#147D7A" stroke-width="1.8" marker-end="url(#arrow)">
+    <path d="M 238 850 H 261"/><path d="M 450 850 H 473"/><path d="M 662 850 H 685"/><path d="M 966 850 H 989"/><path d="M 1178 850 H 1201"/>
+  </g>
+  <text x="56" y="913" class="small">Any change after review invalidates the prior decision. Expanded scope requires user authorization.</text>
+</svg>
