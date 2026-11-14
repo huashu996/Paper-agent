@@ -6,6 +6,8 @@ Paper Agent is a Codex skill for writing, revising, and checking research papers
 
 It supports complete manuscripts and focused tasks: a method section, experiment analysis, editable research diagrams, citation work, conclusions, or a specific Word correction. Word and PowerPoint work includes inspection of the saved document's visible layout, not only its internal XML.
 
+When drafting a Chinese thesis from an outline and experiment notes, Paper Agent uses its built-in writing guidance to develop the argument, retain the author's terminology, and match claims to the evidence. [First-draft example](#drafting-chinese-prose-from-experiment-notes)
+
 ![Paper Agent: inputs, capabilities, and deliverables](docs/images/paper-agent-overview.svg)
 
 ## Start here
@@ -222,7 +224,7 @@ These output names come from the prompt; they are not fixed names imposed by the
 
 ## Choose the task, not a complicated configuration
 
-Describe what you want in ordinary language. Paper Agent selects **one primary mode**, the relevant capability modules, and an execution tier. You can name these explicitly when useful.
+Describe what you want in ordinary language. Paper Agent selects one of eight primary modes, the relevant capability modules, and an execution tier. You can also specify these in the request.
 
 | Primary mode | Typical inputs | Typical requested output |
 | --- | --- | --- |
@@ -233,6 +235,7 @@ Describe what you want in ordinary language. Paper Agent selects **one primary m
 | `literature_citation` | Approved literature or EndNote Library/Group, writing scope | Supported prose and the authorized citation workflow |
 | `conclusion_only` | Actual methods, results, and limitations | Conclusions and future work bounded by existing evidence |
 | `revision_only` | Exact document and specific changes or annotations | Focused revision of the authorized content and objects |
+| `defense_deck` | Thesis, talk duration, audience, supplied template and figures | Editable defense PPTX following the template, with slide checks |
 
 The six optional modules are `word_layout`, `equation`, `figure_ppt`, `experiment_evidence`, `citation_endnote`, and `rag`. Modules load the relevant workflow rather than expanding the task automatically.
 
@@ -259,6 +262,22 @@ Tiers change verification scope and iteration cost, not the requirement to prese
 7. **Deliver the requested files.** Separate final files from build artifacts and state what was changed, what was preserved, what was actually checked, and any unresolved limitations.
 
 The normal state sequence is `USER_INPUT → PLANNED → EXECUTING → READY_FOR_REVIEW → APPROVED → DELIVERED`. “Approved” here describes the workflow's review result; it is not journal acceptance or a claim that an institution has approved the manuscript.
+
+## Drafting Chinese prose from experiment notes
+
+When drafting a method paragraph, identify the observation or input, explain what the method does with it, and name the output. In an experiment section, keep each conclusion close to its comparison, metric, and conditions. For example, if the evidence supports a decrease in the **mean error across four groups**, retain that level of detail. If the author supplies a glossary, writing sample, or template, follow those conventions in the first draft. [Chinese thesis language guide](references/chinese-thesis-language-style.md)
+
+**Example: writing a first draft from experiment notes.** Suppose you are comparing two ways to calibrate temperature sensors and have both sensor readings and reference temperatures. You can start with a request like this.
+
+```text
+Use $paper-agent with resource/notes/protocol.md and data/processed/calibration.csv
+to draft a Chinese section comparing the two temperature calibration methods.
+Open with why these sensors need calibration. Use the terms in the protocol
+and explain how error was calculated and which temperature ranges were tested.
+Report the results in the table. If it contains only group means, limit the
+conclusion to those means. Flag any unverified explanation for anomalous readings.
+Save output/calibration-draft.docx.
+```
 
 ## Copyable task prompts
 
@@ -386,7 +405,7 @@ These helpers operate on local files. The privacy behavior of the assistant and 
 - **Visible quality:** inspect the final saved rendering for clipping, collisions, orphan captions, broken pagination, distorted figures, and unwanted blank content. XML validity alone is insufficient.
 - **Application boundaries:** native PowerPoint operations are restricted to the authorized target presentation; unrelated presentations must not be modified or closed.
 
-The skill cannot supply evidence that was never collected, guarantee publication or institutional acceptance, or guarantee any plagiarism/AIGC detector score. Requirements beyond the available data or installed tools must be stated explicitly. School-specific defaults apply only when the relevant template is requested; they are not universal publishing standards.
+The delivery notes identify gaps in the evidence or tooling. Publication and degree decisions rest with the relevant institutions. School-specific defaults apply when the corresponding template is requested.
 
 Keep personal manuscripts, names, contact details, institution-specific identifiers, unpublished datasets, private bibliographies, local-path inventories, credentials, and session logs out of this public repository. Before sharing a customized copy, inspect text files **and** embedded document metadata, comments, notes, hidden content, and binary assets. Generated retrieval records can include full source paths and source text, so keep their outputs in the private workspace.
 

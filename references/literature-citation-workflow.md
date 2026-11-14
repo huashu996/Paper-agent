@@ -1,5 +1,7 @@
 # Literature Writing and EndNote CWYW Workflow
 
+For checks on the existence, metadata, or claim support of references in an existing manuscript, use [reference verification and CWYW preservation](reference-verification-and-cwyw-preservation.md). These checks can proceed from the manuscript and primary sources. Request an EndNote library or group only for work that needs it, and carry forward authorization already given for specific corrections.
+
 ## Contents
 - Interactive task configuration
 - Import, metadata validation, and EndNote group scope

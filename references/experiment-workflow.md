@@ -71,18 +71,18 @@ Do not replace source tables with summaries, regrouped tables, or derived averag
 
 #### 4. Draft the experiment section
 
-For every complete method-verification chapter in a thesis, use the same level-3 skeleton unless the user or an approved school template explicitly specifies another structure:
+Preserve the chapter structure that the author or template has established. When drafting a new method-verification chapter without an outline, the following headings are one option if the available experiments support them:
 
 1. `实验设置与数据集`
 2. `消融实验`
 3. `对比实验`
 4. `计算效率与资源消耗`
 
-Apply the skeleton by experimental logic rather than by copying legacy numbering. Put platform, hardware/software, parameters, datasets, metrics, baselines, fairness settings and implementation conditions under `实验设置与数据集`. Put module removal, incremental configuration and sensitivity evidence under `消融实验`. Put public benchmarks, private datasets, cross-platform or cross-sensor generalization, quantitative results, qualitative maps and failure comparisons under `对比实验`, with level-4 or numbered subheadings when several comparison tasks exist. Put runtime, latency, memory, throughput and deployment limits under `计算效率与资源消耗`. Integrate robustness, failure cases and limitations into the most relevant one of these four sections instead of creating an additional peer-level experiment heading.
+Choose headings that reflect the tests actually performed. Give the conditions needed to interpret each comparison, including the setup, datasets, metrics and baselines. Group related comparisons when that helps readers follow the question. Discuss sensitivity, failure cases, resource costs or deployment limits where the evidence is most relevant.
 
-Track dataset occurrence across the whole thesis, not only within the current chapter. At the first occurrence of a new dataset, write approximately five thesis lines covering its origin or purpose, acquisition platform and principal sensors, scene or sequence scope, distinctive motion/geometry difficulty, the selected subset, and the exact validation role; preserve or insert the dataset's authorized citation at that first occurrence. At every later occurrence, do not repeat the basic description. State only why the dataset is reused in the current chapter, which method component or boundary it tests, and how this role differs from earlier use.
+Track where each dataset first appears in the thesis. At that point, explain what was used and why it suits this test. Include provenance, collection conditions, the selected subset and its limitations when they matter to the interpretation. Preserve or insert the authorized citation as appropriate. If the dataset is reused, describe what the later test asks and any relevant change in the setup.
 
-When the source supplies only ablation configurations and results, expand `消融实验` without inventing evidence. Write in the order `实验目的与待验证模块 → 控制变量与公平条件 → 配置递进关系 → 表中关键数值与变化幅度 → 机制解释 → 作用边界与仍未分离的因素`. Distinguish a module's independent contribution from the gain of a combined configuration. If the available configurations cannot separate two effects, say so explicitly and propose it only as future work; never present an unperformed split as completed evidence.
+Explain the comparison that answers the ablation question. Identify the configurations, what changed and which conditions were held constant. Interpret the relevant outcome in that context. When several components changed together, attribute the result to the combined configuration. Treat an untested explanation or a proposed follow-up as such.
 
 Use this default research sequence when supported by the source:
 
